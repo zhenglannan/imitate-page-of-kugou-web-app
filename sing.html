@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <!--声明文档兼容模式，表示使用IE浏览器的最新模式-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--设置视口的宽度(值为设备的理想宽度)，页面初始缩放值<理想宽度/可见宽度>-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>极客商城首页</title>
+
+    <!-- 引入jQuery核心js文件 -->
+    <script src="bootStrap/js/jquery-1.11.0.js"></script>
+    <!-- 引入BootStrap核心js文件 -->
+    <script src="bootStrap/js/bootstrap.min.js"></script>
+    <!-- 引入Bootstrap核心样式文件 -->
+    <link href="bootStrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="css/menu.css"/>
+    <link rel="stylesheet" type="text/css" href="css/me.css"/>
+<!--    <link rel="stylesheet" href="css/amazeui.min.css">-->
+    <link rel="stylesheet" type="text/css" href="css/listen.css"/>
+    <link rel="stylesheet" type="text/css" href="css/look.css"/>
+    <link rel="stylesheet" type="text/css" href="css/sing.css"/>
+<!--    <link rel="stylesheet" href="css/wap.css?2">-->
+    <style>
+        /* Make the image fully responsive */
+        /*.carousel-inner img {*/
+        /*    width: 100%;*/
+        /*    height: 30%;*/
+        /*}*/
+        /*#finaltop{*/
+        /*    position: fixed;*/
+        /*    top: 0px;*/
+        /*    width: 100%;*/
+        /*    !*overflow: hidden;*!*/
+        /*}*/
+    </style>
+</head>
+
+<body>
+<div class="container page">
+    <!--    导航栏-->
+    <div class="row navbar-fixed-top" style="background: blue;    padding-top: 0%;
+    padding-bottom: 4%;">
+        <div class="row topIndex">
+            <div class="col-xs-12">
+                <ul class="nav nav-pills " style="font-size: 21px;">
+                    <a href="#">
+                        <li id="ce"><img src="images/settings.png" class="img-responsive"
+                                         alt="Cinque Terre"/>
+                    </a></li>
+                    <li role="presentation"><a href="index.html">me</a></li>
+                    <li role="presentation"><a href="listen.html">listen</a></li>
+                    <li role="presentation"><a href="look.html">look</a></li>
+                    <li role="presentation"><a href="sing.html">sing</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-xs-12" style="    padding-top: 0;">
+                <form class="form-inline" action="" method="get">
+                    <input class="form-control " type="text" name="search_text" id="search_text" placeholder="Search"/>
+                    <input class="btn btn-success " type="button" name="search_button" id="search_button"></a>
+                </form>
+            </div>
+        </div>
+
+    </div>
+
+    <div style="    margin-top: 35%;">
+        <div class="row" align="center" style="border-bottom: darkgrey solid 1px">
+            <div class="col-xs-3" align="center">
+                <img src="hs/chang.png" class="img-responsive" alt="Cinque Terre"/>
+                <p>我要唱</p>
+            </div>
+            <div class="col-xs-3" align="center">
+                <img src="hs/wode.png" class="img-responsive" alt="Cinque Terre"/></a>
+                <p>我的</p>
+            </div>
+            <div class="col-xs-3" align="center">
+                <img src="hs/ding.png" class="img-responsive" alt="Cinque Terre"/></a>
+                <p>定段赛</p>
+            </div>
+            <div class="col-xs-3" align="center">
+                <img src="hs/gengduo.png" class="img-responsive" alt="Cinque Terre"/></a>
+                <p>全部</p>
+            </div>
+        </div>
+    </div>
+
+    <div style="border-bottom: darkgrey solid 1px">
+        <div class="row" style="text-align:left;">
+            <div class="col-xs-12">
+                <img src="hs/toutiao.png">K歌一键修音，唱好唱准更容易><img src="hs/jianpou.png"></a>
+            </div>
+        </div>
+    </div>
+    <div class="row" style="margin-top: 2%;">
+        <ul id="myTab" class="nav nav-tabs">
+            <li class="active">
+                <a href="#attention" data-toggle="tab">
+                    关注
+                </a>
+            </li>
+            <li>
+                <a href="#hot" data-toggle="tab">
+                    热门
+                </a>
+            </li>
+            <li>
+                <a href="#near" data-toggle="tab">
+                    附近
+                </a>
+            </li>
+        </ul>
+    </div>
+
+
+    <div id="myTabContent" class="tab-content">
+        <div class="tab-pane fade in active" id="attention">
+
+            <div class="row">
+                <div class="col-xs-12">
+                    <form action="" method="get">
+                        <input class="search" type="text" name="search_text" id="search_text1" value="添加好友，查看好友作品>">
+                    </form>
+                </div>
+            </div>
+
+            <div class="row" style=" border-bottom: darkgrey solid 3px">
+                <div class="col-xs-12" align="center" style="border-bottom: darkgrey solid 1px">
+                    <div class="container1">
+                        <div class="photo"><img src="hs/touxiang.png"/></div>
+                        <div class="content">
+                            <a style="padding: 0">因你而改变</a>
+                            <div class="news">22分钟前</div>
+                            <div class="text1">鲜衣怒马，少年郎</div>
+                            <div><img src="hs/music.png"></div>
+
+                            <div class="col-xs=12"><a>岁月留声</a>
+                                <p class="text2">:你唱的蛮有感觉的</p>
+                            </div>
+                            <div class="col-xs-3" align="center">
+                                <img src="hs/dianzan.png" class="img-responsive" alt="Cinque Terre"/>
+                                <h>23</h>
+                            </div>
+
+                            <div class="col-xs-3" align="center">
+                                <img src="hs/liwu.png" class="img-responsive" alt="Cinque Terre"/>
+                                <h>683</h>
+                            </div>
+                            <div class="col-xs-3" align="center">
+                                <img src="hs/pinglun.png" class="img-responsive" alt="Cinque Terre"/>
+                                <h>78</h>
+                            </div>
+                            <div class="col-xs-3" align="center">
+                                <img src="hs/zhuanfa.png" class="img-responsive" alt="Cinque Terre"/>
+                                <h>3</h>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12" align="center" style="border-bottom: darkgrey solid 1px">
+                    <div class="container1">
+                        <div class="photo"><img src="hs/touxiang.png"/></div>
+                        <div class="content">
+                            <a style="padding: 0">知否知否</a>
+                            <div class="news">23分钟前.</div>
+                            <div class="text1">我刚唱了一首《给我一次爱你的机会》，求点赞求礼物！</div>
+                            <div class="col-xs-12">
+                                <div class="col-xs-4" style="padding: 0" align="left"><img src="hs/picture1.png"/></div>
+                                <div class="col-xs-4" style="padding: 0" align="left"><img src="hs/picture1.png"/></div>
+                                <div class="col-xs-4" style="padding: 0" align="left"><img src="hs/picture1.png"/></div>
+                            </div>
+
+
+                            <div class="col-xs-3" align="center">
+                                <img src="hs/dianzan.png" class="img-responsive" alt="Cinque Terre"/>
+                                <h>3</h>
+                            </div>
+                            <div class="col-xs-3" align="center">
+                                <img src="hs/liwu.png" class="img-responsive" alt="Cinque Terre"/>
+                                <h>683</h>
+                            </div>
+                            <div class="col-xs-3" align="center">
+                                <img src="hs/pinglun.png" class="img-responsive" alt="Cinque Terre"/>
+                                <h>78</h>
+                            </div>
+                            <div class="col-xs-3" align="center">
+                                <img src="hs/zhuanfa.png" class="img-responsive" alt="Cinque Terre"/>
+                                <h>3</h>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="tab-pane fade" id="hot">
+            <div class="col-xs-12" align="center" style="border-bottom: darkgrey solid 1px">
+                <div class="container1">
+                    <div class="photo1"><img src="hs/touxiang.png"/></div>
+                    <div class="content">
+                        <a style="padding: 0">rua甜</a>
+                        <div class="news">推广作品</div>
+                        <div class="text1">你有多久没有陪过你的父母了？</div>
+                        <div><img src="hs/music1.png"></div>
+
+                        <div class="col-xs-3" align="center">
+                            <img src="hs/dianzan.png" class="img-responsive" alt="Cinque Terre"/>
+                            <h>23</h>
+                        </div>
+
+                        <div class="col-xs-3" align="center">
+                            <img src="hs/liwu.png" class="img-responsive" alt="Cinque Terre"/>
+                            <h>683</h>
+                        </div>
+                        <div class="col-xs-3" align="center">
+                            <img src="hs/pinglun.png" class="img-responsive" alt="Cinque Terre"/>
+                            <h>78</h>
+                        </div>
+                        <div class="col-xs-3" align="center">
+                            <img src="hs/zhuanfa.png" class="img-responsive" alt="Cinque Terre"/>
+                            <h>3</h>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="tab-pane fade" id="near">
+            <div class="col-xs-12" align="left" style="border-bottom: darkgrey solid 1px">
+                <div class="container1">
+                    <div class="photo"><img src="hs/touxiang1.png"/></div>
+                    <div class="content">
+                        <div class="text1">烈酒当歌</div>
+                        <div class="text2">200米以内</div>
+                    </div>
+                    <div class="photo5"><img src="hs/tianjia.png"/></div>
+                </div>
+            </div>
+            <div class="col-xs-12" align="left" style="border-bottom: darkgrey solid 1px">
+                <div class="container1">
+                    <div class="photo"><img src="hs/touxiang2.png"/></div>
+                    <div class="content">
+                        <div class="text1">127820738</div>
+                        <div class="text2">400米以内</div>
+                    </div>
+                    <div class="photo5"><img src="hs/tianjia.png"/></div>
+                </div>
+            </div>
+
+            <div class="col-xs-12" align="left" style="border-bottom: darkgrey solid 1px">
+                <div class="container1">
+                    <div class="photo"><img src="hs/touxiang1.png"/></div>
+                    <div class="content">
+                        <div class="text1">两种气体</div>
+                        <div class="text2">500米以内</div>
+                    </div>
+                    <div class="photo5"><img src="hs/tianjia.png"/></div>
+                </div>
+            </div>
+
+            <div class="col-xs-12" align="left" style="border-bottom: darkgrey solid 1px">
+                <div class="container1">
+                    <div class="photo"><img src="hs/touxiang2.png"/></div>
+                    <div class="content">
+                        <div class="text1">扬</div>
+                        <div class="text2">700米以内</div>
+                    </div>
+                    <div class="photo5"><img src="hs/tianjia.png"/></div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</div>
+<div id="other" class="row navbar-fixed-bottom"  style="background: whitesmoke">
+    <!--    <div >-->
+    <!--            <iframe src="playBottom.html" frameborder=none width="100%" style="    height: 83px;" scrolling="no" ></iframe>-->
+    <!--    </div>-->
+</div>
+<script>
+    $(function () {
+        $(".topIndex a").each(function () {
+            $this = $(this);
+            if ($this[0].href == String(window.location)) {
+                // $this.addClass("hover");
+                // $this.css("background-color", "pink");
+                $this.css("color", "ghostwhite");
+                $this.css("font-size", "33px");
+                $this.css("padding-top", "0");
+            }
+            else{
+                $this.css("color", "lightblue");
+            }
+        });
+        $("#other").load("playBottom.html ", function (response, status, xhr) {
+            $("#other").html(response);
+        })
+    })
+</script>
+
+</body>
+</html>

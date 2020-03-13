@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1 ,user-scalable=0">
+    <title>login</title>
+
+</head>
+
+<!-- 引入jQuery核心js文件 -->
+<script src="../bootStrap/js/jquery-1.11.0.js"></script>
+<!-- 引入BootStrap核心js文件 -->
+<script src="../bootStrap/js/bootstrap.min.js"></script>
+<!-- 引入Bootstrap核心样式文件 -->
+<link href="../bootStrap/css/bootstrap.min.css" rel="stylesheet">
+<style>
+    #loginButton {
+        color: white;
+        background: #3bc3f7;
+        border: none;
+        border-radius: 35px;
+        width: 91%;
+        font-size: 14px;
+        padding: 2%;
+    }
+
+    .footer {
+        font-size: 13px;
+    }
+
+    .footer a {
+        text-decoration: none;
+        color: #3c24f8;
+    }
+
+    #footDiv {
+        position: relative;
+        margin-top: 100%;
+    }
+
+    #otherWays p {
+        font-size: 10px;
+    }
+</style>
+<script>
+    $(function () {
+        $("#return").click(function () {
+            history.go(-1);
+        })
+    })
+
+</script>
+<body>
+<div style="background-color: #4495ff">
+    <button id="return" type="button" class="btn btn-default btn-lg" style="background: transparent;
+    border: none;
+    font-size: 18px;
+    color: ghostwhite;">
+        <span class="glyphicon glyphicon glyphicon-remove" aria-hidden="true"></span>一键登陆
+    </button>
+
+</div>
+<div class="container-fluid" align="center">
+    <div class="row">
+        <!--顶部-->
+
+        <div class="col-xs-12">
+            <img src="../img/头像.svg" class="img-responsive" alt="Responsive image" style="width: 15%;">
+        </div>
+        <div class="col-xs-12">
+            <p class="text-center">+86 159****3853</p>
+        </div>
+        <div class="col-xs-12">
+            <button id="loginButton">本机号码一键登陆</button>
+        </div>
+        <div class="col-xs-12" style="margin-top: 7%">
+            <a href="#" style=" text-decoration: none;color: #3c24f8;font-size: 11px;">其他手机号/账号登陆</a>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-4">
+            <hr>
+        </div>
+        <div class="col-xs-4">
+           <span style="    color: darkgray;
+    font-size: 11px;
+    margin-top: 14px;
+    padding: 0;
+    margin: 0;">其他登陆方式</span>
+        </div>
+        <div class="col-xs-4">
+            <hr>
+        </div>
+    </div>
+    <div class="row" id="otherWays" style="padding: 57px; margin: 0;">
+
+        <div class="col-xs-4">
+            <img src="../img/微博.svg" class="img-responsive" alt="Responsive image" style="width: 80%;">
+            <p>微博</p>
+        </div>
+        <div class="col-xs-4">
+            <img src="../img/qq.svg" class="img-responsive" alt="Responsive image" style="width: 80%;">
+            <p>qq</p>
+        </div>
+        <div class="col-xs-4">
+            <img src="../img/weixin.svg" class="img-responsive" alt="Responsive image" style="width: 80%;">
+            <p>微信</p>
+        </div>
+
+    </div>
+    <div class="row" id="footDiv">
+        <div class="col-xs-12">
+            <span class="footer" style="">同意<a href="#" style="">中国移动认证服务条款</a></span>
+        </div>
+        <div class="col-xs-12">
+            <span class="footer">登陆代表你同意<a href="#">酷狗服务</a>和<a href="#">隐私条款</a></span>
+        </div>
+
+    </div>
+
+</div>
+
+
+</body>
+</html>

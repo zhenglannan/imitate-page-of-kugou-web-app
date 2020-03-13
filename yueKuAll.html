@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1 ,user-scalable=0">
+    <title>all</title>
+</head>
+
+<!-- 引入jQuery核心js文件 -->
+<script src="bootStrap/js/jquery-1.11.0.js"></script>
+<!-- 引入BootStrap核心js文件 -->
+<script src="bootStrap/js/bootstrap.min.js"></script>
+<!-- 引入Bootstrap核心样式文件 -->
+<link href="bootStrap/css/bootstrap.css" rel="stylesheet">
+
+<link rel="stylesheet" href="css/yueKuAll.css"/>
+<style>
+    .yueKuAll a {
+        text-decoration: none;
+        color: #aaa;
+        padding: 0 30px;
+        font-size: 18px;
+        /*display: block;*/
+    }
+</style>
+<body>
+
+<div class="container "style="width: 100%;padding: 0;">
+    <!--顶部-->
+    <div style="    background-color: #4495ff;
+    position: fixed;
+    top: 0;
+    width: 100%;" class="">
+        <button id="yueKuAll" type="button" class="btn btn-default btn-lg" style="background: transparent;
+    border: none;
+    font-size: 20px;
+    color: ghostwhite;">
+            <span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span>乐库
+        </button>
+        <button type="button" class="btn btn-default btn-lg" style="background: transparent;
+    border: none;
+    font-size:20px;
+    color: ghostwhite;    float: right;">
+            <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+        </button>
+    </div>
+    <!--  标签页-->
+    <div class="yueKuAll" style="     position: absolute;
+    top: 46px;" >
+        <ul id="myTab" class="nav nav-tabs">
+            <li role="presentation">
+                <a href="#a"  class="active" aria-controls="a" data-toggle="tab" role="tab">
+                    酷狗号
+                </a>
+            </li>
+            <li role="presentation" >
+                <a href="#b" aria-controls="b" data-toggle="tab" role="tab">
+                    分类
+                </a>
+            </li>
+            <li role="presentation">
+                <a href="#c"  aria-controls="c" data-toggle="tab" role="tab">
+                    视频
+                </a>
+            </li>
+            <li role="presentation">
+                <a href="#d" aria-controls="d" data-toggle="tab" role="tab">
+                    排行
+                </a>
+            </li>
+        </ul>
+        <!-- 每个tab页对应的d内容 -->
+        <div id="myTabContent" class="tab-content">
+            <div class="tab-pane fade in active" id="a">
+            </div>
+            <div class="tab-pane fade" id="b">
+            </div>
+            <div class="tab-pane fade" id="c">
+            </div>
+            <div class="tab-pane fade" id="d">
+            </div>
+        </div>
+    </div>
+
+</div>
+
+</body>
+<script>
+    $(function () {
+        $("#myTab a[href='#a']").click(function (e) {
+            e.preventDefault();
+            $("#a").load("yueKuKuGouHao.html");
+        })
+        $("#myTab a[href='#b']").click(function (e) {
+            e.preventDefault();
+            $("#b").load("yueKuFenLei.html");
+        })
+        $("#myTab a[href='#c']").click(function (e) {
+            e.preventDefault();
+            $("#c").load("yueKuVideo.html");
+        })
+        $("#myTab a[href='#d']").click(function (e) {
+            e.preventDefault();
+            $("#d").load("yueKuPaiHang.html");
+        })
+
+        $("#yueKuAll").click(function () {
+            history.go(-1);
+        })
+    })
+</script>
+</html>

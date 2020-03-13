@@ -1,0 +1,61 @@
+/*ui li{*/
+/*    list-style-type: none;*/
+/*}*/
+.newSong{
+    margin: 0 0 0 0;
+}
+
+.container1 {width: 100%;}
+.photo0 {float: left; width:5%;}
+.photo {float: left; width:15%;}
+.content {float: left; width:50%; text-align:left}
+.text {color: #0f0f0f;font-size: 10px }
+.news {color: darkgray;font-size: 1px}
+
+.photo3 {float: left; width:20%;text-align: left}
+.content3 {float: right; width:75%; text-align:left;}
+
+.photo4 {float: left; width:5%;text-align:left;}
+.content4 {float: left; width:30%; text-align:left;}
+.photo5 {float: right; width:5%;}
+
+
+/*.row{*/
+/*    margin-bottom: 3px;*/
+/*}*/
+
+
+/*[class*="col-"]{*/
+/*//调整行高*!*!*/
+/*    padding-top:5px;*/
+/*padding-bottom: 5px;*/
+/*    align:center;*/
+/*}*/
+
+.newSong li{
+    /*float: left;*/
+    width:46%;
+    margin-right: 8%;
+    margin-top: 50px;
+}
+
+.right-side{
+    margin-right: 0 !important;
+}
+
+.newSong li h3{
+    margin: 0;
+}
+.newSong li h3 a{
+    color: #444;
+
+}
+.tab-content{
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+#myTabContent{
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+

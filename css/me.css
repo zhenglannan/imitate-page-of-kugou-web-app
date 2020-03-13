@@ -1,0 +1,45 @@
+#container {
+    /*//设置最大宽度*/
+    max-width: 640px;
+    margin: 0 auto;
+    background: #ececec;
+    position: relative;
+}
+
+.row {
+    /*margin-bottom: 15px;*/
+}
+
+row1 {
+    /*margin-bottom: 0px;*/
+}
+
+.classp {
+    align: center;
+    /*font-weight:bold;*/
+    color: #0f0f0f;
+}
+
+img-responsive {
+    align: center;
+}
+
+
+/*[class*="col-"] {*/
+/*    padding-top: 15px;*/
+/* padding-bottom: 15 px;*/
+/*    align: center;*/
+/*}*/
+
+.list2 {
+    line-height: 15px;
+    padding-left: 30px;
+}
+
+.page1 {
+    height: 736px;
+    width: 414px;
+    border-style: solid;
+    border-width: 10px
+}
+

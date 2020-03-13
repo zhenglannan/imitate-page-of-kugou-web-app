@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <!--声明文档兼容模式，表示使用IE浏览器的最新模式-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--设置视口的宽度(值为设备的理想宽度)，页面初始缩放值<理想宽度/可见宽度>-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>极客商城首页</title>
+
+    <!-- 引入jQuery核心js文件 -->
+    <script src="bootStrap/js/jquery-1.11.0.js"></script>
+    <!-- 引入BootStrap核心js文件 -->
+    <script src="bootStrap/js/bootstrap.min.js"></script>
+    <!-- 引入Bootstrap核心样式文件 -->
+    <link href="bootStrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="css/menu.css" />
+    <!--    <link rel="stylesheet" href="css/amazeui.min.css">-->
+    <!--    <link rel="stylesheet" href="css/wap.css?2">-->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/nav.js"></script>
+    <!--    <script type="text/javascript"></script>-->
+
+</head>
+<style>
+    /* Make the image fully responsive */
+    .carousel-inner img {
+        width: 100%;
+        height: 30%;
+    }
+
+
+    .sidebar {
+        background: none;
+        width: 88%;
+        position: absolute;
+        left: -88%;
+        top: 0;
+        height: 100%;
+        overflow: auto;
+        transition: all 0.2s ease 0s;
+    }
+
+    /*.sidebar{background: #333645;width: 200px; position: absolute; left: 0; top: 0; height: 100%; overflow: auto; transition: all 0.2s ease 0s;}*/
+    .main {
+        overflow: hidden;
+        position: absolute;
+        left: 0;
+        right: 0;
+        height: 100%;
+        transition: all 0.2s ease 0s;
+    }
+
+    .big-page .sidebar {
+        left: 0;
+    }
+
+    .big-page .main {
+        left: 88%;
+    }
+
+    #other {
+        position: fixed;
+        bottom: 0;
+    }
+</style>
+
+<body>
+
+    <!--导航菜单-->
+    <div class="container-fluid main">
+        <!--    导航栏-->
+        <div class="row " style="background: blue;    padding-top: 7%;
+    padding-bottom: 4%;">
+            <div class="row topIndex">
+                <div class="col-xs-12">
+                    <ul class="nav nav-pills " style="font-size: 21px;">
+                        <a href="#">
+                            <li id="ce"><img src="images/settings.png" class="img-responsive" alt="Cinque Terre" />
+                        </a></li>
+                        <li role="presentation"><a href="index.html">me</a></li>
+                        <li role="presentation"><a href="listen.html">listen</a></li>
+                        <li role="presentation"><a href="look.html">look</a></li>
+                        <li role="presentation"><a href="sing.html">sing</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-xs-12" style="    padding-top: 0;">
+                    <form class="form-inline" action="" method="get">
+                        <input class="form-control " type="text" name="search_text" id="search_text"
+                            placeholder="Search" />
+                        <input class="btn btn-success " type="button" name="search_button" id="search_button"></a>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+
+
+        <div class="row" style="    margin-top: 1%;">
+            <div class="col-xs-12" style="text-align: center;">
+                <a href="otherPlay/login.html">
+                    <div align="center">
+                        <img src="images/5.png" class="img-responsive" alt="Cinque Terre" />
+                    </div>
+                    <h6 style="text-align:center">点击登录，享精准歌曲推荐</h6>
+                </a>
+            </div>
+        </div>
+
+        <div class="row" style=" border-bottom: darkgrey solid 3px">
+            <div class="col-xs-3" align="center">
+                <img src="images/1.png" class="img-responsive" alt="Cinque Terre" style="margin: 0 auto" /></a>
+                <p class="classp">本地音乐</p>
+                <p style="color: darkgrey">0</p>
+            </div>
+            <div class="col-xs-3" align="center">
+                <img src="images/2.png" class="img-responsive" alt="Cinque Terre" /></a>
+                <p class="classp">我的收藏</p>
+                <p style="color: darkgrey">0</p>
+            </div>
+            <div class="col-xs-3" align="center">
+                <img src="images/3.png" class="img-responsive" alt="Cinque Terre" /></a>
+                <p class="classp">下载</p>
+                <p style="color: darkgrey">0</p>
+            </div>
+            <div class="col-xs-3" align="center">
+                <img src="images/4.png" class="img-responsive" alt="Cinque Terre" /></a>
+                <p class="classp">最近播放</p>
+                <p style="color: darkgrey">0</p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-xs-12 list2" style=" border-bottom: darkgrey solid 1px">
+                <p class="classp">音乐圈</p>
+            </div>
+            <div class="col-xs-12 list2" style=" border-bottom: darkgrey solid 1px">
+                <p class="classp">K歌圈</p>
+            </div>
+            <div class="col-xs-12 list2" style=" border-bottom: darkgrey solid 1px">
+                <p class="classp">推广</p>
+            </div>
+        </div>
+
+        <!--    底部播放栏-->
+        <div id="other" class="row " style="background: whitesmoke">
+            <!--    <div >-->
+            <!--            <iframe src="playBottom.html" frameborder=none width="100%" style="    height: 83px;" scrolling="no" ></iframe>-->
+            <!--    </div>-->
+        </div>
+    </div>
+</body>
+
+<div class="sidebar">侧边栏</div>
+<script type="text/javascript">
+    $(function () {
+
+        // 导航栏高亮显示
+        $(".topIndex a").each(function () {
+            $this = $(this);
+            if ($this[0].href == String(window.location)) {
+                // $this.addClass("hover");
+                // $this.css("background-color", "pink");
+                $this.css("color", "ghostwhite");
+                $this.css("font-size", "33px");
+                $this.css("padding-top", "0");
+            } else {
+                $this.css("color", "lightblue");
+            }
+        });
+        // 底部加载播放栏页面
+        $("#other").load("playBottom.html ", function (response, status, xhr) {
+            $("#other").html(response);
+        })
+
+        $(".sidebar").load("otherPlay/ceBianLan.html ", function (response, status, xhr) {
+            $(".sidebar").html(response);
+        })
+        // 点击图片切换侧边栏
+        $("#ce").click(function () { 
+            $("body").toggleClass("big-page");
+        })
+        // $("#ce").click(function () {
+        //     // $("body").toggleClass("big-page");
+        //     // location.href="otherPlay/login.html"
+        //     $("ceBianLan.html").fadeToggle();
+        // })
+    })
+</script>
+
+</html>

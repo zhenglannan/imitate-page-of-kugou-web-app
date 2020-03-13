@@ -1,0 +1,36 @@
+.c img{
+    width: 44%;
+}
+.main{
+    margin-top: 10%;
+}
+video{
+    width: 100%;border-radius: 3%
+}
+.a{
+    margin-top: 1%;
+}
+.b{
+    font-size: 125%;
+    color: black;
+}
+.c{
+    margin-top: 2%;
+}
+.d{
+    margin-top: -1%;
+}
+.e{
+    width: 20%;
+}
+.f{
+    padding: 0;
+    /* margin-left: 0%; */
+    padding-left: 8%;
+}
+.g{
+    padding: 0;
+}
+.g span{
+    color: darkgrey;
+}

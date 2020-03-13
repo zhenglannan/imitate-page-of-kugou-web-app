@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <!--声明文档兼容模式，表示使用IE浏览器的最新模式-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--设置视口的宽度(值为设备的理想宽度)，页面初始缩放值<理想宽度/可见宽度>-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>极客商城首页</title>
+
+    <!-- 引入jQuery核心js文件 -->
+    <script src="bootStrap/js/jquery-1.11.0.js"></script>
+    <!-- 引入BootStrap核心js文件 -->
+    <script src="bootStrap/js/bootstrap.min.js"></script>
+    <!-- 引入Bootstrap核心样式文件 -->
+    <link href="bootStrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="css/menu.css"/>
+    <!--    <link rel="stylesheet" type="text/css" href="css/me.css" />-->
+    <link rel="stylesheet" type="text/css" href="css/listen.css"/>
+    <link rel="stylesheet" href="swiper/css/swiper.min.css">
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/nav.js"></script>
+    <script src="js/jquery-1.11.0.js"></script>
+    <script src="js/listen.js"></script>
+    <!-- Swiper JS -->
+    <script src="swiper/js/swiper.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            zoom: true,
+            pagination: {
+                el: '.swiper-pagination',
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+    </script>
+    <style>
+        .swiper-container {
+            width: 100%;
+            height: 100%;
+        }
+
+        .swiper-slide {
+            overflow: hidden;
+        }
+
+        /*#finaltop{*/
+        /*    position: fixed;*/
+        /*    top: 0px;*/
+        /*    width: 100%;*/
+        /*    !*overflow: hidden;*!*/
+        /*}*/
+    </style>
+</head>
+
+<body>
+<div class="container-fluid page">
+    <!--    导航栏-->
+    <div class="row navbar-fixed-top" style="background: blue;    padding-top: 7%;
+    padding-bottom: 4%;">
+        <div class="row topIndex">
+            <div class="col-xs-12">
+                <ul class="nav nav-pills " style="font-size: 21px;">
+                    <a href="#">
+                        <li id="ce"><img src="images/settings.png" class="img-responsive"
+                                         alt="Cinque Terre"/>
+                    </a></li>
+                    <li role="presentation"><a href="index.html">me</a></li>
+                    <li role="presentation"><a href="listen.html">listen</a></li>
+                    <li role="presentation"><a href="look.html">look</a></li>
+                    <li role="presentation"><a href="sing.html">sing</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-xs-12" style="    padding-top: 0;">
+                <form class="form-inline" action="" method="get">
+                    <input class="form-control " type="text" name="search_text" id="search_text" placeholder="Search"/>
+                    <input class="btn btn-success " type="button" name="search_button" id="search_button"></a>
+                </form>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="row" id="listen" style="       margin-top: 35%;
+    background: blue;">
+        <!--轮播图-->
+        <div class="col-xs-12">
+            <div class="carousel slide" id="listen1" data-ride="carousel">
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                </ol>
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner" role="listbox">
+                    <div class="item active">
+                        <img src="images/1.jpg" alt="...">
+                        <div class="carousel-caption">
+                            ...
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="images/2.jpg" alt="...">
+                        <div class="carousel-caption">
+                            ...
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="images/3.jpg" alt="...">
+                        <div class="carousel-caption">
+                            ...
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Controls -->
+                <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+    </div>
+    <!--        图标分类-->
+    <div class="row" align="center" style="margin-top: 6%;">
+        <div class="col-xs-4" align="center">
+            <a href="#"><img id="yueku" src="images/6.png" class="img-responsive" alt="Cinque Terre"/></a>
+            <p class="classp">乐库</p>
+        </div>
+        <div class="col-xs-4" align="center">
+            <img src="images/7.png" class="img-responsive" alt="Cinque Terre"/>
+            <p class="classp">歌单</p>
+        </div>
+        <div class="col-xs-4" align="center">
+            <img src="images/8.png" class="img-responsive" alt="Cinque Terre"/></a>
+            <p class="classp">电台·听书</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-4" align="center">
+            <img src="images/9.png" class="img-responsive" alt="Cinque Terre"/></a>
+            <p class="classp">猜你喜欢</p>
+        </div>
+        <div class="col-xs-4" align="center">
+            <img src="images/10.png" class="img-responsive" alt="Cinque Terre"/></a>
+            <p class="classp">每日推荐</p>
+        </div>
+        <div class="col-xs-4" align="center">
+            <input id="togger" type="image" src="images/11.png" class="img-responsive" alt="Cinque Terre"/>
+            <p class="classp">更多</p>
+        </div>
+    </div>
+    <div class="row" id="more" style="    display: block;
+    padding-top: 3%;background: #ebebeb">
+        <div class="col-xs-4" align="center">
+            <img id="fenleibtn" src="images/29.png" class="img-responsive" alt="Cinque Terre"/></a>
+            <p class="classp">分类</p>
+        </div>
+        <div class="col-xs-4" align="center">
+            <img src="images/30.png" class="img-responsive" alt="Cinque Terre"/></a>
+            <p class="classp">歌手</p>
+        </div>
+        <div class="col-xs-4" align="center">
+            <input type="image" src="images/31.png" class="img-responsive" alt="Cinque Terre"/>
+            <p class="classp">儿童专区</p>
+        </div>
+    </div>
+    <!--        标签页分类-->
+    <div class="row">
+        <div class="col-xs-12" style="  position: -webkit-sticky;
+    position: sticky;
+    top: 13%;  background: whitesmoke
+">
+            <ul id="myTab" class="nav nav-tabs" style="  ">
+                <li class="active">
+                    <a href="#a" data-toggle="tab">
+                        新歌
+                    </a>
+                </li>
+                <li>
+                    <a href="#b" data-toggle="tab">
+                        直播
+                    </a>
+                </li>
+                <li>
+                    <a href="#c" data-toggle="tab">
+                        歌单
+                    </a>
+                </li>
+                <li>
+                    <a href="#d" data-toggle="tab">
+                        视频
+                    </a>
+                </li>
+                <li>
+                    <a href="#e" data-toggle="tab">
+                        短视频
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <!-- 每个tab页对应的内容 -->
+        <div class="col-xs-12">
+            <div id="myTabContent" class="tab-content">
+                <!--                新歌-->
+                <div class="tab-pane fade in active" id="a">
+                    <div class="row" style=" border-bottom: darkgrey solid 3px">
+                        <div class="col-xs-12" align="center" style="border-bottom: darkgrey solid 1px">
+                            <div class="container1">
+                                <div class="photo0"><img src="images/17.png"/></div>
+                                <div class="photo"><img src="images/12.bmp"/></div>
+                                <div class="content">
+                                    <div class="text">太阳（正式版）</div>
+                                    <div class="news">新闻内容</div>
+                                </div>
+                            </div>
+                        </div>
+                        <hr style="border-bottom: darkgrey solid 3px">
+                        <div class="col-xs-12" align="center" style="border-bottom: darkgrey solid 1px">
+                            <div class="container1">
+                                <div class="photo0"><img src="images/17.png"/></div>
+                                <div class="photo"><img src="images/13.bmp"/></div>
+                                <div class="content">
+                                    <div class="text">知否知否</div>
+                                    <div class="news">胡夏、郁可唯.</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12" align="center" style="border-bottom: darkgrey solid 1px">
+                            <div class="container1">
+                                <div class="photo0"><img src="images/17.png"/></div>
+                                <div class="photo"><img src="images/14.bmp"/></div>
+                                <div class="content">
+                                    <div class="text">隔岸观火</div>
+                                    <div class="news">高源.</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12" align="center" style="border-bottom: darkgrey solid 1px">
+                            <div class="container1">
+                                <div class="photo0"><img src="images/17.png"/></div>
+                                <div class="photo"><img src="images/15.bmp"/></div>
+                                <div class="content">
+                                    <div class="text">巅峰之上</div>
+                                    <div class="news">毛不易.</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12" align="center" style="border-bottom: darkgrey solid 1px">
+                            <div class="container1">
+                                <div class="photo0"><img src="images/17.png"/></div>
+                                <div class="photo"><img src="images/16.bmp"/></div>
+                                <div class="content">
+                                    <div class="text">我爱你入骨，你骗我成瘾</div>
+                                    <div class="news">黄静美.</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row" style=" border-bottom: darkgrey solid 3px">
+                        <div class="col-xs-12" align="center" style="border-bottom: darkgrey solid 1px">
+                            <div class="container1">
+                                <div class="photo0"><img src="images/17.png"/></div>
+                                <div class="photo"><img src="images/12.bmp"/></div>
+                                <div class="content">
+                                    <div class="text">太阳（正式版）</div>
+                                    <div class="news">新闻内容</div>
+                                </div>
+                            </div>
+                        </div>
+                        <hr style="border-bottom: darkgrey solid 3px">
+                        <div class="col-xs-12" align="center" style="border-bottom: darkgrey solid 1px">
+                            <div class="container1">
+                                <div class="photo0"><img src="images/17.png"/></div>
+                                <div class="photo"><img src="images/13.bmp"/></div>
+                                <div class="content">
+                                    <div class="text">知否知否</div>
+                                    <div class="news">胡夏、郁可唯.</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12" align="center" style="border-bottom: darkgrey solid 1px">
+                            <div class="container1">
+                                <div class="photo0"><img src="images/17.png"/></div>
+                                <div class="photo"><img src="images/14.bmp"/></div>
+                                <div class="content">
+                                    <div class="text">隔岸观火</div>
+                                    <div class="news">高源.</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12" align="center" style="border-bottom: darkgrey solid 1px">
+                            <div class="container1">
+                                <div class="photo0"><img src="images/17.png"/></div>
+                                <div class="photo"><img src="images/15.bmp"/></div>
+                                <div class="content">
+                                    <div class="text">巅峰之上</div>
+                                    <div class="news">毛不易.</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12" align="center" style="border-bottom: darkgrey solid 1px">
+                            <div class="container1">
+                                <div class="photo0"><img src="images/17.png"/></div>
+                                <div class="photo"><img src="images/16.bmp"/></div>
+                                <div class="content">
+                                    <div class="text">我爱你入骨，你骗我成瘾</div>
+                                    <div class="news">黄静美.</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row" style=" border-bottom: darkgrey solid 3px">
+                        <div class="col-xs-12" align="center" style="border-bottom: darkgrey solid 1px">
+                            <div class="container1">
+                                <div class="photo0"><img src="images/17.png"/></div>
+                                <div class="photo"><img src="images/12.bmp"/></div>
+                                <div class="content">
+                                    <div class="text">太阳（正式版）</div>
+                                    <div class="news">新闻内容</div>
+                                </div>
+                            </div>
+                        </div>
+                        <hr style="border-bottom: darkgrey solid 3px">
+                        <div class="col-xs-12" align="center" style="border-bottom: darkgrey solid 1px">
+                            <div class="container1">
+                                <div class="photo0"><img src="images/17.png"/></div>
+                                <div class="photo"><img src="images/13.bmp"/></div>
+                                <div class="content">
+                                    <div class="text">知否知否</div>
+                                    <div class="news">胡夏、郁可唯.</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12" align="center" style="border-bottom: darkgrey solid 1px">
+                            <div class="container1">
+                                <div class="photo0"><img src="images/17.png"/></div>
+                                <div class="photo"><img src="images/14.bmp"/></div>
+                                <div class="content">
+                                    <div class="text">隔岸观火</div>
+                                    <div class="news">高源.</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12" align="center" style="border-bottom: darkgrey solid 1px">
+                            <div class="container1">
+                                <div class="photo0"><img src="images/17.png"/></div>
+                                <div class="photo"><img src="images/15.bmp"/></div>
+                                <div class="content">
+                                    <div class="text">巅峰之上</div>
+                                    <div class="news">毛不易.</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12" align="center" style="border-bottom: darkgrey solid 1px">
+                            <div class="container1">
+                                <div class="photo0"><img src="images/17.png"/></div>
+                                <div class="photo"><img src="images/16.bmp"/></div>
+                                <div class="content">
+                                    <div class="text">我爱你入骨，你骗我成瘾</div>
+                                    <div class="news">黄静美.</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <!--                直播-->
+                <div class="tab-pane fade" id="b">
+                    <div class="row" style=" border-bottom: darkgrey solid 3px">
+                        <div class="col-xs-6" align="left">
+                            <img src="images/18.bmp" alt="staff"/>
+                            <h5>小主播过五关斩六将</h5>
+                            <h7 style="color: darkgrey" align="left">小猪猪Z</h7>
+                        </div>
+                        <div class="col-xs-6" align="left">
+                            <img src="images/19.bmp" alt="staff"/>
+                            <h5>小主播过五关斩六将</h5>
+                            <h7 style="color: darkgrey" align="left">小猪猪Z</h7>
+                        </div>
+                    </div>
+                    <div class="row" style=" border-bottom: darkgrey solid 3px">
+                        <div class="col-xs-6" align="left">
+                            <img src="images/20.bmp" alt="staff"/>
+                            <h5>十项全能</h5>
+                            <h7 style="color: darkgrey" align="left">依依</h7>
+                        </div>
+                        <div class="col-xs-6" align="left">
+                            <img src="images/21.bmp" alt="staff"/>
+                            <h5>小主播过五关斩六将</h5>
+                            <h7 style="color: darkgrey" align="left">小猪猪Z</h7>
+                        </div>
+                    </div>
+                    <div class="row" style=" border-bottom: darkgrey solid 3px">
+                        <div class="col-xs-6" align="left">
+                            <img src="images/18.bmp" alt="staff"/>
+                            <h5>来啦我的宝贝们</h5>
+                            <h7 style="color: darkgrey" align="left">灰灰</h7>
+                        </div>
+                        <div class="col-xs-6" align="left">
+                            <img src="images/19.bmp" alt="staff"/>
+                            <h5>唱老歌唱情歌</h5>
+                            <h7 style="color: darkgrey" align="left">木头</h7>
+                        </div>
+                    </div>
+                    <div class="row" style=" border-bottom: darkgrey solid 3px">
+                        <div class="col-xs-6" align="left">
+                            <img src="images/20.bmp" alt="staff"/>
+                            <h5>嗨歌热唱，等你来听</h5>
+                            <h7 style="color: darkgrey" align="left">音乐频道</h7>
+                        </div>
+                    </div>
+                </div>
+                <!--                歌单-->
+                <div class="tab-pane fade" id="c">
+                    <div class="row">
+                        <div class="col-xs-12" align="center">
+                            <div class="container1">
+                                <div class="photo3"><img src="images/22.bmp"/></div>
+                                <div class="content3">
+                                    <div class="text">每周歌曲推荐</div>
+                                    <div class="news">一修 - 兴风作浪</div>
+                                    <div class="news">玺晨 - 错就错在太爱你</div>
+                                    <div class="news">小倩 - 天蓬大元帅</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row3">
+                        <div class="col-xs-12" style=" border-bottom: darkgrey solid 3px">
+                            <div class="container1">
+                                <div class="photo4"><img src="images/27.png"/></div>
+                                <div class="content4">
+                                    <div class="news">酷狗号歌单君</div>
+                                </div>
+                                <div class="photo5"><img src="images/28.png"/></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12" align="center">
+                            <div class="container1">
+                                <div class="photo"><img src="images/23.bmp"/></div>
+                                <div class="content3">
+                                    <div class="text">最酷的百大DJ即将引爆电音浪潮</div>
+                                    <div class="news">一修 - 兴风作浪</div>
+                                    <div class="news">玺晨 - 错就错在太爱你</div>
+                                    <div class="news">小倩 - 天蓬大元帅</div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row3">
+                        <div class="col-xs-12" style=" border-bottom: darkgrey solid 3px">
+                            <div class="container1">
+                                <div class="photo4"><img src="images/27.png"/></div>
+                                <div class="content4">
+                                    <div class="news">酷狗号歌单君</div>
+                                </div>
+                                <div class="photo5"><img src="images/28.png"/></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12" align="center">
+                            <div class="container1">
+                                <div class="photo"><img src="images/24.bmp"/></div>
+                                <div class="content3">
+                                    <div class="text">网络伤感：我幻想过永远</div>
+                                    <div class="news">一修 - 兴风作浪</div>
+                                    <div class="news">玺晨 - 错就错在太爱你</div>
+                                    <div class="news">小倩 - 天蓬大元帅</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row3">
+                        <div class="col-xs-12" style=" border-bottom: darkgrey solid 3px">
+                            <div class="container1">
+                                <div class="photo4"><img src="images/27.png"/></div>
+                                <div class="content4">
+                                    <div class="news">酷狗号歌单君</div>
+                                </div>
+                                <div class="photo5"><img src="images/28.png"/></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--视频-->
+                <div class="tab-pane fade" id="d">
+                    e
+                </div>
+                <!--                短视频-->
+                <div class="tab-pane fade" id="e">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--    底部播放器-->
+    <div id="other" class="row navbar-fixed-bottom" style="margin-bottom: 0%; background: whitesmoke">
+        <!--        <div class="col-xs-12">-->
+        <!--&lt;!&ndash;            <iframe src="playBottom.html" frameborder=none width="100%" style="    height: 83px;"&ndash;&gt;-->
+        <!--&lt;!&ndash;                    scrolling="no"></iframe>&ndash;&gt;-->
+        <!--        </div>-->
+    </div>
+</div>
+</div>
+<script>
+    $(function () {
+        $(".topIndex a").each(function () {
+            $this = $(this);
+            if ($this[0].href == String(window.location)) {
+                // $this.addClass("hover");
+                // $this.css("background-color", "pink");
+                $this.css("color", "ghostwhite");
+                $this.css("font-size", "33px");
+                $this.css("padding-top", "0");
+            } else {
+                $this.css("color", "lightblue");
+            }
+        });
+        $("#other").load("playBottom.html ", function (response, status, xhr) {
+            $("#other").html(response);
+        })
+        $("#yueku").click(function () {
+            location.href="yueKuAll.html"
+            // $(window).attr('location', 'yueKuAll.html')
+        })
+        // $("#fenleibtn").click(function () {
+        //     $(window).attr('location','yueKuAll.html')
+        // })
+        // $("#myTab a[href='#a']").click(function (e) {
+        //     e.preventDefault();
+        //     $('#a').load("index.html");
+        // })
+        // $("#myTab a[href='#b']").click(function (e) {
+        //     e.preventDefault();
+        //     $("#b").load("yueKuFenLei.html");
+        // })
+        // $("#myTab a[href='#c']").click(function (e) {
+        //     e.preventDefault();
+        //     $("#c").load("yueKuVideo.html");
+        // })
+        $("#myTab a[href='#d']").click(function (e) {
+            e.preventDefault();
+            $("#d").load("Listen/ListenVideo.html");
+        })
+        $("#myTab a[href='#e']").click(function (e) {
+            e.preventDefault();
+            $("#e").load("Listen/listenShortVideo.html");
+        })
+
+    })
+</script>
+
+</body>
+</html>

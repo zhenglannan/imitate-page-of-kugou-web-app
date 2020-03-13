@@ -1,0 +1,87 @@
+/**** About Section ****/
+myTabContent{
+    width: 100%;
+}
+[class*="col-"]{
+    padding-top:20px;//调整行高
+padding-bottom: 5px;
+    align:center;
+}
+.about{
+    padding-bottom: 60px;
+}
+#about-desc{
+    color: #f4f4f4;
+    margin-top: 30px;
+    text-align: center;
+}
+.about ul{
+    margin-top: 60px;
+}
+.about ul li{
+    float: left;
+    margin-right: 8%;
+    background-color: rgba(22,22,22,0.25);
+    padding: 20px;
+}
+.about ul li h3{
+    color: #f4f4f4;
+    text-align: center;
+}
+.about ul li h6{
+    color: #f4f4f4;
+    text-align: center;
+}
+.social-staff{
+    width:118px;
+    margin: 0 auto;
+    float: left;
+}
+.social-staff ul{
+    margin-top: 0;
+}
+
+
+/**** Social Icons ****/
+.contact-desc .social{
+    width:200px;
+    float: left;
+    margin-top: 10px;
+    margin-right: 5px;
+}
+.contact-desc ul li a{
+    width:35px;
+    height: 35px;
+    background-color:rgba(117,117,117,0.1);
+    margin-right: 4px;
+    float: left;
+    background-repeat: no-repeat;
+    background-size: 25px;
+    outline: 0;
+    border-radius: 20px;
+    background-position: center center;
+}
+
+.contact-desc ul li:last-child{
+    margin-right: 0;
+}
+
+.adjust{
+    text-align: center;
+    padding:80px;
+}
+
+
+.button {
+    background-color: #1296db; /* Green */
+    border: none;
+    color: white;
+    padding: 8px 27px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 12px;
+}

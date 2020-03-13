@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1 ,user-scalable=0">
+    <title>乐库</title>
+    <!-- 引入jQuery核心js文件 -->
+    <script src="bootStrap/js/jquery-1.11.0.js"></script>
+    <!-- 引入BootStrap核心js文件 -->
+    <script src="bootStrap/js/bootstrap.min.js"></script>
+    <!-- 引入Bootstrap核心样式文件 -->
+    <link href="bootStrap/css/bootstrap.css" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="css/yueKuKuGouHao.css"/>
+    <style>
+
+    </style>
+</head>
+<script>
+    function show1() {
+        var aTrue = document.getElementsByClassName("true);
+        var aFalse = document.getElementsByClassName("false");
+        var x = 1;
+        if (aTrue[0].style.display != "none") {
+            aTrue[0].style.display = "none";
+            aFalse[0].style.display = "inline";
+        } else {
+            aTrue[0].style.display = "inline";
+            aFalse[0].style.display = "none";
+        }
+    }
+
+    function show() {
+        var aTrue = document.getElementsByClassName("a");
+        var aFalse = document.getElementsByClassName("b");
+        var x = 1;
+        if (aTrue[0].style.display != "none") {
+            aTrue[0].style.display = "none";
+            aFalse[0].style.display = "inline";
+        } else {
+            aTrue[0].style.display = "inline";
+            aFalse[0].style.display = "none";
+        }
+    }
+</script>
+<body style="background:#e8e8e8 ">
+<div class="container-fluid yueKuKuGouHao">
+    <!--顶部栏-->
+    <div class="row yueKuKuGouHaoa">
+        <div class="col-xs-3">
+            <img src="img/1.png" class="img-circle">
+            <p>关注</p>
+        </div>
+        <div class="col-xs-3">
+            <img src="img/1.png" class="img-circle">
+            <p>关注</p>
+        </div>
+        <div class="col-xs-3">
+            <img src="img/1.png" class="img-circle">
+            <p>关注</p>
+        </div>
+        <div class="col-xs-3">
+            <img src="img/1.png" class="img-circle">
+            <p>关注</p>
+        </div>
+    </div>
+
+    <div class="yueKuKuGouHaoAll">
+        <!--    头像资料-->
+        <div class="row yueKuKuGouHaod">
+            <div class="col-xs-2">
+                <img src="img/1.png" class="img-circle">
+            </div>
+            <div class="col-xs-7">
+                <p class="yueKuKuGouHaoe"> 鹿晗</p>
+                <p class="yueKuKuGouHaof">刚刚</p>
+            </div>
+            <div class="col-xs-3">
+                <button class="follow" onclick="show1()">
+                    <span class="true" style="display: inline-block">关注</span>
+                    <span class="false" style="display: none">已关注</span>
+                </button>
+            </div>
+        </div>
+        <!--    文字-->
+        <div class="row">
+            <div class="col-xs-12">
+                <p class="yueKuKuGouHaog">卡妹最新SNL现场首演强势新单[Easy]</p>
+            </div>
+
+        </div>
+        <!--    图片内容-->
+        <div class="row yueKuKuGouHaob">
+            <div class="col-xs-4">
+                <img src="img/暮光.jpg" class="img-rounded">
+            </div>
+            <div class="col-xs-4">
+                <img src="img/暮光.jpg" class="img-rounded">
+            </div>
+            <div class="col-xs-4">
+                <img src="img/暮光.jpg" class="img-rounded">
+            </div>
+        </div>
+        <!--底部栏-->
+        <div class="row yueKuKuGouHaoc">
+            <div class="col-xs-6 ">
+                <span>116播放</span>
+            </div>
+            <div class="col-xs-3 ">
+                <img src="img/留言.png">
+                <span>评论</span>
+            </div>
+            <div class="col-xs-3 ">
+                <img src="img/点赞.png">
+                <span>99+</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="yueKuKuGouHaoAll">
+        <!--    头像资料-->
+        <div class="row yueKuKuGouHaod">
+            <div class="col-xs-2">
+                <img src="img/1.png" class="img-circle">
+            </div>
+            <div class="col-xs-7">
+                <p class="yueKuKuGouHaoe"> 鹿晗</p>
+                <p class="yueKuKuGouHaof">刚刚</p>
+            </div>
+            <div class="col-xs-3">
+                <button class="follow" onclick="show()">
+                    <span class="a" style="display: inline-block">关注</span>
+                    <span class="b" style="display: none">已关注</span>
+                </button>
+            </div>
+        </div>
+        <!--    文字-->
+        <div class="row">
+            <div class="col-xs-12">
+                <p class="yueKuKuGouHaog">卡妹最新SNL现场首演强势新单[Easy]</p>
+            </div>
+
+        </div>
+        <!--    图片内容-->
+        <div class="row yueKuKuGouHaob">
+            <div class="col-xs-4">
+                <img src="img/暮光.jpg" class="img-rounded">
+            </div>
+            <div class="col-xs-4">
+                <img src="img/暮光.jpg" class="img-rounded">
+            </div>
+            <div class="col-xs-4">
+                <img src="img/暮光.jpg" class="img-rounded">
+            </div>
+        </div>
+        <!--底部栏-->
+        <div class="row yueKuKuGouHaoc">
+            <div class="col-xs-6 ">
+                <span>116播放</span>
+            </div>
+            <div class="col-xs-3 ">
+                <img src="img/留言.png">
+                <span>评论</span>
+            </div>
+            <div class="col-xs-3 ">
+                <img src="img/点赞.png">
+                <span>99+</span>
+            </div>
+        </div>
+    </div>
+
+
+</div>
+</div>
+</body>
+</html>

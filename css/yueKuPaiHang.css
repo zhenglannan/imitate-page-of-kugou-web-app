@@ -1,0 +1,32 @@
+.yueKuPaiHanga {
+  font-size: 18px;
+  font-weight: bold;
+  color: black;
+  margin-bottom: 0;
+  margin-top: 5%;
+}
+
+.yueKuPaiHang col-xs-8 {
+  padding-top: 5%;
+}
+
+.yueKuPaiHang {
+  background-color: #e8e8e8;
+  border-radius: 10px;
+  width: 100%;
+  margin-left: -5%;
+  margin-top: 3%;
+}
+
+.yueKuPaiHang img {
+  /*width: 104%;*/
+  border-bottom-right-radius: 10px;
+  border-top-right-radius: 10px;
+  width: 155%;
+}
+
+.yueKuPaiHangb {
+  font-size: 14px;
+  color: darkgrey;
+  margin: 0;
+}

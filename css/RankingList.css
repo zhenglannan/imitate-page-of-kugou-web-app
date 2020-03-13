@@ -1,0 +1,49 @@
+
+.RankingListDiv{
+    position: sticky;
+    height: 30px;
+    top:1px;
+    background-color: white;
+    font-size: 18px;
+}
+
+.list{
+    margin-top: 15px;
+    margin-right: 1%;
+    margin-left: 1%;
+}
+.list > .list-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+.list > .list-container .row{
+    width: 100%;
+    margin-right: 1%;
+    margin-left: 1%;
+    margin-bottom: 15px;
+}
+.list > .list-container .row img{
+    width: 30%;
+    border-radius: 5px;
+}
+.list > .list-container .row p{
+    padding-left: 1.9vw;
+    padding-right: 1.9vw;
+    font-size: 12px;
+}
+
+.list > .list-container .row2{
+    width: 30%;
+    margin-right: 1%;
+    margin-left: 1%;
+    margin-bottom: 15px;
+}
+.list > .list-container .row2 img{
+    width: 100%;
+    border-radius: 5px;
+}
+.list > .list-container .row2 span{
+    font-size: 12px;
+}
